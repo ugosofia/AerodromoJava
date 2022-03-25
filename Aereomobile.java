@@ -9,9 +9,4 @@ public abstract class Aereomobile implements CMP {
         this.sigla = sigla;
     }
 
-
-    @Override
-    public Boolean superiore(CMP x) {
-        return null;
-    }
 }
