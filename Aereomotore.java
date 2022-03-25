@@ -2,6 +2,10 @@ public class Aereomotore extends Aereomobile {
 
     private double potenza;
 
+    public Aereomotore(String sigla, double potenza) {
+        super(sigla);
+        this.potenza = potenza;
+    }
 
     @Override
     public Boolean superiore(CMP x) {
@@ -13,8 +17,8 @@ public class Aereomotore extends Aereomobile {
         } else {
             Aereomotore al = (Aereomotore) x;
             if (al.potenza < potenza)
+                return true;
                 return false;
-            return true;
         }
     }
 }
