@@ -8,17 +8,21 @@ public class Aereomotore extends Aereomobile {
     }
 
     @Override
-    public Boolean superiore(CMP x) {
+    public void superiore(CMP x) {
         if (x == null)
-            return false;
+            System.out.println("Il valore passato è nullo");
 
-        if (!(x instanceof Aereomotore)) {
-            return false;
+        if (!(x instanceof Aereomotore am)) {
+            throw new ClassCastException("Errore di tipo!!");
         } else {
-            Aereomotore al = (Aereomotore) x;
-            if (al.potenza < potenza)
-                return true;
-                return false;
+            if (am.potenza == potenza) {
+                System.out.println("I due aereomotori hanno la stessa efficienza");
+            } else
+            if(am.potenza < potenza) {
+                System.out.println("L'aereomotore " + am.sigla + " è meno efficiente di " + this.sigla);
+            } else {
+                System.out.println("L'aliante " + am.sigla + " è più efficiente di " + this.sigla);
+            }
         }
     }
 }
