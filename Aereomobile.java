@@ -1,6 +1,6 @@
 public abstract class Aereomobile implements CMP {
 
-    private String sigla;
+    protected String sigla;
 
     public Aereomobile() {
     }
