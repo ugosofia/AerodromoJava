@@ -1,12 +1,26 @@
 public class Aereomotore extends Aereomobile {
+    // ATTRIBUTI
 
     private double potenza;
 
+    //CONSTRUTTORI
+
+    /**
+     *
+     * @param sigla
+     * @param potenza
+     */
     public Aereomotore(String sigla, double potenza) {
         super(sigla);
         this.potenza = potenza;
     }
 
+    //METODI
+
+    /**
+     *
+     * @param x
+     */
     @Override
     public void superiore(CMP x) {
         if (x == null)
@@ -26,6 +40,11 @@ public class Aereomotore extends Aereomobile {
         }
     }
 
+    /**
+     *
+     * @param o
+     * @return
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

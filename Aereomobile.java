@@ -1,15 +1,25 @@
 import java.util.Objects;
 
 public abstract class Aereomobile implements CMP {
-
+    //ATTRIBUTI
     protected String sigla;
 
+    //COSTRUTTORI
+
+    /**
+     * COSTRUTTORE VUOTO
+     */
     public Aereomobile() {
     }
 
+    /**
+     *
+     * @param sigla
+     */
     public Aereomobile(String sigla) {
         this.sigla = sigla;
     }
+
 
     @Override
     public String toString() {

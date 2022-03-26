@@ -2,14 +2,27 @@ import java.util.Objects;
 
 public class Aliante extends Aereomobile {
 
+    //ATTRIBUTI
     private int efficienza;
 
+    //COSTRUTTORI
 
+    /**
+     *
+     * @param sigla
+     * @param efficienza
+     */
     public Aliante(String sigla, int efficienza) {
         super(sigla);
         this.efficienza = efficienza;
     }
 
+    //METODI
+
+    /**
+     *
+     * @param x
+     */
     @Override
     public void superiore(CMP x) {
         if (x == null)
