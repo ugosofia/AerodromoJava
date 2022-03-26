@@ -1,6 +1,6 @@
 public interface CMP {
 
-    public Boolean superiore (CMP x);
+    public void superiore (CMP x);
 
 
 }
