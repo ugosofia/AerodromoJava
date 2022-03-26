@@ -25,4 +25,21 @@ public class Aereomotore extends Aereomobile {
             }
         }
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Aereomotore)) return false;
+        if (!super.equals(o)) return false;
+        Aereomotore aereomotore = (Aereomotore) o;
+        return sigla == aereomotore.sigla;
+    }
+
+    @Override
+    public String toString() {
+        return "Aereomotore{" +
+                "sigla='" + sigla + '\'' +
+                ", potenza=" + potenza +
+                '}';
+    }
 }

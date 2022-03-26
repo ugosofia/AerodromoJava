@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Aliante extends Aereomobile {
 
     private int efficienza;
@@ -27,4 +29,23 @@ public class Aliante extends Aereomobile {
 
         }
     }
+
+    @Override
+    public String toString() {
+        return "Aliante{" +
+                "sigla='" + sigla + '\'' +
+                ", efficienza=" + efficienza +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Aliante)) return false;
+        if (!super.equals(o)) return false;
+        Aliante aliante = (Aliante) o;
+        return sigla == aliante.sigla;
+    }
+
+
 }
